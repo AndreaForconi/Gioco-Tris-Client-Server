@@ -21,7 +21,7 @@ public class ServerTris {
             System.out.println("Attendo giocatore 1...");
             //accettazione del client
             Giocatore g1 = new Giocatore(server.accept());
-            //aspettiamo che scriva READY, nel caso il server accetta più client crea un oggetto giocatore per ogni client che si connette e aspetta i primi due che mettono pronto, gli altri sono sospesi dal main Thread
+            //aspettiamo che scriva READY
             aspettaReady(g1);
 
             System.out.println("Attendo giocatore 2...");
@@ -234,4 +234,5 @@ public class ServerTris {
         }
 
     }
+
 }
